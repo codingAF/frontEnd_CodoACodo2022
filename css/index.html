@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- 1ra forma de usar css-->
+     <style>
+        /* Esto es un comentario en css */
+        /* usar <!-- --> no funciona en css es de html*/
+        /* TODO LO QUE ESCRIBA DENTRO DE STYLE VA A SER CSS*/
+
+        p {
+            color:green;
+            font-size: bolder;
+        }
+
+        /* puedo darle estilo a una clase de forma INTERNA asi tambien*/
+        .otraClaseColorVerde {
+            background-color: green;
+        }
+
+        section {
+            background-color: yellow;
+        }
+
+        /* por ID, uso # */
+
+        #btn {
+            background-color: aqua;
+        }
+
+    </style>
+
+    <!-- 3ra forma EXTERNA de aplicar estilo-->
+    <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+    <!-- 
+        2da forma
+        aplicar estilo en linea
+        usando el atributo style
+        SIEMPRE PREDOMINA EL QUE ESTA EN LINEA- si hay dos estilos aplicados
+    -->
+    <section class="seccionPrincipal">
+        <h1 style="color:red">Css</h1>
+        <h2 style="color:blue">Subtitulo</h2>
+        <h3 style="color:rgb(89,11,60)">Probando rgb</h3>
+
+        <h4>Hola, soy un subtitulo h2</h4>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam, dolore tenetur modi sint sit doloremque labore sunt fugiat porro nam at. Vel reiciendis praesentium veritatis earum expedita veniam fuga?</p>
+    </section>
+
+    <section class="otraClaseColorVerde">
+        <h1>
+            Hola
+        </h1>
+    </section>
+
+    <section action="alta.html">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" 
+                type="text" 
+                maxlength="50" 
+                required>
+
+            <button id="btn">
+                Enviar
+            </button>
+            <button class="btn">
+                Enviar
+            </button>
+            <button class="btn">
+                Enviar
+            </button>
+        </form>
+    </section>
+
+
+</body>
+</html>
